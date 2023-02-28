@@ -1,5 +1,6 @@
 import 'package:factory_method/platform_button.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class IosButton implements PlatformButton {
   @override
@@ -7,6 +8,10 @@ class IosButton implements PlatformButton {
       {required BuildContext context,
       required Widget child,
       required VoidCallback onPressed}) {
-    return CupertinoButton(onPressed: onPressed, child: child);
+    return CupertinoButton(
+      onPressed: onPressed,
+      color: Colors.blueAccent,
+      child: child,
+    );
   }
 }
