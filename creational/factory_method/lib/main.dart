@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
               context: context,
               child: Text(
                 Theme.of(context).platform.toString(),
-                style: const TextStyle(color: Color(0xFF000000)),
+                style: const TextStyle(color: Colors.black),
               ),
               onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
                   const SnackBar(content: Text("Factory method"))),
